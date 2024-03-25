@@ -35,7 +35,7 @@ public class Main {
 			}
 		}
 		
-		System.out.println("O funcionário com maior salário é o(a) " + nome + " com um salário de " + String.format("%.2f", maiorSalario));
+		System.out.printf("O funcionário com maior salário é o(a) " + nome + " com um salário de " + String.format("%.2f%n", maiorSalario));
 		
 		sc.close();
 	}
