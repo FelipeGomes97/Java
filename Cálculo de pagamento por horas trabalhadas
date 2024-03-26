@@ -1,0 +1,32 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+	 
+	public static void main (String[]args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		// Cálculo de pagamento por horas trabalhadas
+		
+		String nome;
+		double valorPorHora, pagamento;
+		int horasTrabalhadas;
+		
+		System.out.print("Nome: ");
+		nome = sc.nextLine();
+		
+		System.out.print("Valor por hora: ");
+		valorPorHora = sc.nextDouble();
+		
+		System.out.print("Horas trabalhadas: ");
+		horasTrabalhadas = sc.nextInt();
+		
+		pagamento = valorPorHora * horasTrabalhadas;
+		
+		System.out.printf("O pagamento para " + nome + " deve ser $%.2f%n", pagamento);
+		
+		sc.close();
+	}
+}
